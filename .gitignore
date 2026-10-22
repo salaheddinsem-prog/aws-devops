@@ -1,0 +1,32 @@
+# --- Terraform ---
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+*.tfplan
+
+# Variables : on ignore les vraies valeurs, on garde les exemples
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+
+# --- Identifiants et secrets ---
+.env
+.env.*
+*.pem
+*.key
+.aws/
+credentials
+*accessKeys*.csv
+*credentials*.csv
+
+# --- Divers ---
+.DS_Store
+*.swp
